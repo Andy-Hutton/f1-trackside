@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: monospace, sans-serif;
+  background-image: url("../image/spawide.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 40vh;
   color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  color: black;
+  border: solid black 2px;
+  background-color: antiquewhite;
+  opacity: 0.9;
+  min-width: 350px;
+  max-width: max-content;
+  padding: 1em;
+  margin: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* html {
+  scroll-behavior: smooth;
+
 }
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  background-color: var(--wht);
+} */
+
+/***********************
+ General Styling / elements
+************************/
+/* 
+.thin {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+} */
+
+/*************
+Images
+**************/
+
+/* img {
+  width: 100%;
+  display: block;
+} */
+
+/**************
+buttons / links / li
+***************/
+
+/**************
+typography
+***************/
+
+/************** 
+Layout
+***************/
+
+/* .container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+} */
+
+/*************** 
+Media Queries
+****************/
