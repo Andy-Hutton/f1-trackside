@@ -36,8 +36,6 @@ function F1() {
           <p>Starts at {F1.MRData?.RaceTable?.Races[0]?.time} GMT</p>
         </>
       )}
-
-      <p>Import Footer Here!</p>
     </div>
   );
 }
