@@ -1,12 +1,10 @@
 import { useState } from "react";
-import "./App.css";
+// import "./App.css";
 import axios from "axios";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Header from "./Components/Header/Header";
-// import Footer from "./Components/Footer/Footer";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function getTop10() {
+function Top10() {
   const [Top10, setTop10] = useState({});
 
   async function getTop10() {
@@ -17,18 +15,29 @@ function getTop10() {
   }
 
   return (
-    <div className="Top10">
+    <div className="App">
       <>
         <p>
-          View the current
-          <button onClick={getTop10}>top 10</button>
+          View the current Driver standings clicking
+          <button onClick={getTop10}>here</button>
         </p>
-        <h2>
-          {/* need to work out file path to link F1 Top 10 {F1.MRData?.StandingsTable?.StandingsLists?.DriverStandings?.} */}
-        </h2>
+        <p>
+          Driver Standings
+          {Top10.MRData?.StandingsTable?.StandingsLists[0]?.DriverStandings.map(
+            (standing) => {
+              return (
+                <p>
+                  {standing.position}- {standing.Driver.givenName} -
+                  {standing.Driver.familyName} With-
+                  {standing.points} Points
+                </p>
+              );
+            }
+          )}
+        </p>
       </>
     </div>
   );
 }
 
-export default getTop10;
+export default Top10;

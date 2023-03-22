@@ -1,11 +1,20 @@
+* {
+  text-decoration: none;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+}
+
 body {
   font-family: monospace, sans-serif;
   background-image: url("../image/spawide.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
-  padding: 40vh;
+  /* height: 100vh; */
+  height: auto;
+  width: fit-content;
+  min-width: 360px;
+  /* padding: 40vh; */
   color: white;
   font-size: 1rem;
   display: flex;
@@ -13,94 +22,187 @@ body {
   flex-wrap: nowrap;
 }
 
+.header {
+  background-image: url("../image/f1img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  background-size: contain;
+  font-family: monospace, "Courier New", Courier;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #111;
+  height: auto;
+  width: auto;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 1em 0 1em;
+  text-align: center;
+  opacity: 0.85;
+}
+.topNav {
+  display: inline-block;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .App {
+  min-height: calc(100vh - 34px);
   color: black;
   border: solid black 2px;
-  background-color: antiquewhite;
+  background-color: rgb(189, 188, 186);
   opacity: 0.9;
-  min-width: 350px;
-  max-width: max-content;
+  min-width: 360px;
+  max-width: auto;
   padding: 1em;
   margin: 1em;
 }
 
-/* html {
-  scroll-behavior: smooth;
-
+.link {
+  border: solid black 2px;
+  background-color: #fff;
+  opacity: 1;
+  height: 40px;
+  min-width: 350px;
+  max-width: auto;
+  padding: 0.5em;
+  margin: 0.5em;
+  text-shadow: 1px 1px 5px #fff;
+  font-weight: bolder;
 }
 
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-*::before {
-  box-sizing: border-box;
-}
-
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  min-width: 320px;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.01em;
-  color: var(--black);
-  background-color: var(--wht);
-} */
-
-/***********************
- General Styling / elements
-************************/
-/* 
-.thin {
-  font-weight: 300;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-li {
-  list-style: none;
-}
-
-a {
+.navLink {
+  display: inline-block;
+  justify-content: center;
   text-decoration: none;
-} */
+  font-size: 0.8em;
+}
 
-/*************
-Images
-**************/
-
-/* img {
+.navLink ul li {
+  display: inline-block;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border: solid black 2px;
+  background-color: #d71f1f;
+  color: white;
+}
+footer {
+  background-color: aliceblue;
+  font-family: monospace, "Courier New", Courier;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #111;
   width: 100%;
+
   display: block;
-} */
-
-/**************
-buttons / links / li
-***************/
-
-/**************
-typography
-***************/
-
-/************** 
-Layout
-***************/
-
-/* .container {
-  width: 90%;
-  max-width: 1024px;
   margin: 0 auto;
-} */
+  text-align: center;
+  opacity: 0.85;
+}
+.footer--pin {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+footer {
+  display: inline-block;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1em;
+}
 
-/*************** 
-Media Queries
-****************/
+footer ul li {
+  display: inline-block;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin: 1em;
+}
+.home {
+  background-image: url("../image/alfacar.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  opacity: 1;
+}
+.next {
+  background-image: url("../image/alpcar.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  opacity: 1;
+}
+.constructor {
+  background-image: url("../image/ficar.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  opacity: 1;
+}
+.driver {
+  background-image: url("../image/hacar.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  opacity: 1;
+}
+.forum {
+  background-image: url("../image/rbcar.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  opacity: 1;
+}
+.about {
+  background-image: url("../image/lhcar.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  opacity: 1;
+}
+.about-container {
+  line-height: 1.2em;
+  letter-spacing: 0.25em;
+  border: solid black 2px;
+}
+
+.live {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing;
+  animation-duration: 3s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.forum-text {
+  border: solid black 2px;
+}
+:visited {
+  color: #111;
+  font-style: italic;
+}
